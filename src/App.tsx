@@ -5,7 +5,7 @@ import reactLogo from './assets/react.svg';
 import wasmLogo from './assets/wasm.svg';
 import viteLogo from '/vite.svg';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   const [count, setCount] = useState(0);
