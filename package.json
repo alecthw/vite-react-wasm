@@ -1,14 +1,20 @@
 {
   "name": "vite-react-wasm",
-  "private": true,
   "version": "0.0.1",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
     "build:wasm": "wasm-pack build wasm",
+    "dev": "vite",
+    "eslint": "eslint \"{src,mock,tests}/**/*.{js,jsx,ts,tsx}\"",
+    "eslint:fix": "eslint --fix \"{src,mock,tests}/**/*.{js,jsx,ts,tsx}\"",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "prettier": "prettier --write \"**/*.{js,jsx,css,less,sass,scss,json}\"",
+    "prettier:ts": "prettier --parser=typescript --write \"**/*.{ts,tsx}\"",
+    "preview": "vite preview",
+    "stylelint": "stylelint \"src/**/*.{css,less,sass,scss}\"",
+    "stylelint:fix": "stylelint --fix \"src/**/*.{css,less,sass,scss}\""
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,8 +28,14 @@
     "@typescript-eslint/parser": "^6.2.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.0.0",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.5",
     "typescript": "^5.1.6",
     "vite": "^4.4.7",
     "vite-plugin-top-level-await": "^1.3.1",

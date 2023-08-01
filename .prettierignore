@@ -1,0 +1,7 @@
+.idea
+.vscode
+.eslintrc.cjs
+node_modules/
+dist/
+public/
+wasm/
