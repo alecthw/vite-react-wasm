@@ -9,9 +9,8 @@
     "dev": "vite",
     "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
     "eslint:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\"",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "prettier": "prettier --write \"**/*.{js,jsx,css,less,sass,scss,json}\"",
-    "prettier:ts": "prettier --parser=typescript --write \"**/*.{ts,tsx}\"",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
     "preview": "vite preview",
     "stylelint": "stylelint \"src/**/*.{css,less,sass,scss}\"",
     "stylelint:fix": "stylelint --fix \"src/**/*.{css,less,sass,scss}\""
@@ -22,7 +21,7 @@
     "wasm": "link:wasm/pkg"
   },
   "devDependencies": {
-    "@eslint/js": "^9.7.0",
+    "@eslint/js": "^8.57.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.7.0",
